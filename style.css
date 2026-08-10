@@ -25,9 +25,10 @@ body {
   color: #f6f1e7;
   display: flex;
   justify-content: space-between;
-  padding: 15px 25px;
+  padding: 8px 25px;
   align-items: center;
   z-index: 1000;
+  min-height: 60px;
 }
 
 
@@ -533,4 +534,20 @@ main img{
     max-width:900px;
     width:100%;
     border-radius:15px;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 8px 12px;
+  }
+
+  .logo img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .navbar .menu a {
+    margin-left: 8px;
+    font-size: 13px;
+  }
 }
